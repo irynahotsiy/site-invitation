@@ -431,6 +431,7 @@ body {
     top: -4px;
 }
 
+
 @media (max-width: 814px) {
     .locationblocks{
         font-size: 2.2em;
@@ -460,3 +461,5 @@ body {
         margin-left: -10px;
     }
 }
+
+/****************************end********************/
