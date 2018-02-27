@@ -368,9 +368,82 @@ body {
 
 
 
+/**************************photos***********************/
+.photos{
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+}
+.wordPhotos{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 3.3em;
+    color:#000000;
+    font-family: Oswald;
+    line-height: 0.5;
+    margin: 0 10px;
+}
+.lineSmall hr{
+    width:10%;
+}
+.lineSmall img{
+    margin-left: -17.5px;
+    top: -4px;
+}
+.gallery{
+    margin: 20px 170px;
+    margin-bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border:12px solid #ffffff;
+    box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
+}
+.gallery a{
+    display:inline-block; 
+    box-sizing: border-box;
+    padding: 3px;
+}
+ .first{
+    width: 33.33333%;
+}
+.second{
+    width: 25%;
+}
+.gallery a img {
+    width: 100%;
+}
+
+@media (max-width: 814px) {
+    .photos{
+        margin-top: 80px;
+    }
+    .gallery{
+    margin: 20px 5px;
+    margin-bottom:0px;
+    border:5px solid #ffffff;
+    box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
+    }
+   
+    .wordPhotos{
+        font-size: 2em;
+        margin: 0 10px;
+    }
+    .lineSmall hr{
+        width:25%;
+    }
+    .lineSmall img{
+        margin-left: -17.5px;
+        top: -4px;
+    }
+    .gallery a{
+        padding: 1px;
+    }
+}
+
 /**************************location********************/
 .location{
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
     width: 100%;
 }
@@ -433,8 +506,15 @@ body {
 
 
 @media (max-width: 814px) {
+    .location{
+        margin-top: 80px;
+    }
+    .styleBackground{
+        line-height: 1.3em;
+        font-size: 1.5em;
+    }
     .locationblocks{
-        font-size: 2.2em;
+        font-size: 2em;
         margin: 0 2px;
     }
     .positionImg img {
@@ -445,11 +525,12 @@ body {
 }
     .details{
         width: 90%;
-        padding: 20px 0;
+        padding: 10px 0;
         box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
     
     }
     .styletext{
+        padding: 20px;
         font-size: 0.8em;
     }
     .line hr{
