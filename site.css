@@ -3,6 +3,17 @@ body {
     margin: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /******************MENU*************************/
 
 .menu {
@@ -80,7 +91,24 @@ body {
     .open {
         display: block;
     }
+    .choose{
+        display: none;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /******************main*******************/
 
@@ -189,9 +217,23 @@ body {
     border-right: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********************Our story*************************/
 
-.textcenter {
+#ourStory {
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -200,7 +242,6 @@ body {
     display: inline-block;
     max-width: 100%;
     width: calc(38% - 40px);
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -234,7 +275,7 @@ body {
 }
 
 .oneline hr {
-    width: 75%;
+    width: 40%;
     height: 1px;
     border-top: 1px solid #b4c2c0;
     border-bottom: none;
@@ -259,6 +300,25 @@ body {
     color: #0e0d0d;
     font-family: Oswald;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* **************** Responsive main and Our story*********************/
 
@@ -354,6 +414,9 @@ body {
         border-top: 0.7px solid #67626230;
         border-bottom: 0.7px solid #67626230;
     }
+    #ourStory {
+        padding-top: 70px;
+    }
     .blocks {
         width: calc(100% - 30px);
         padding: 10px;
@@ -370,35 +433,48 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************photos***********************/
 
-.photos {
-    margin-top: 150px;
+.blocksAlign{
+    padding-top: 150px;
     text-align: center;
     width: 100%;
 }
-
-.wordPhotos {
+.mainWords {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 3.3em;
     color: #000000;
     font-family: Oswald;
     line-height: 0.5;
-    margin: 0 10px;
 }
 
-.lineSmall hr {
+.linesmaller hr {
     width: 10%;
 }
 
-.lineSmall img {
+.linesmaller img {
     margin-left: -17.5px;
     top: -4px;
 }
 
 .gallery {
-    margin: 20px 170px;
+    margin: 30px 170px;
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
@@ -426,25 +502,27 @@ body {
 }
 
 @media (max-width: 814px) {
-    .photos {
-        margin-top: 80px;
+    .blocksAlign{
+        padding-top: 80px;
     }
     .gallery {
+        width:100%;
         margin: 20px 5px;
         margin-bottom: 0px;
         border: 5px solid #ffffff;
         box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
     }
-    .wordPhotos {
+    .mainWords {
         font-size: 2em;
-        margin: 0 10px;
     }
-    .lineSmall hr {
+    .linesmaller hr {
         width: 25%;
     }
-    .lineSmall img {
-        margin-left: -17.5px;
-        top: -4px;
+    .first {
+        width: 100%;
+    }
+    .second {
+        width: 100%;
     }
     .gallery a {
         padding: 1px;
@@ -453,77 +531,79 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************groomsmen*******************/
-.groomsmen {
-    margin-top: 150px;
-    text-align: center;
-    width: 100%;
+
+.biography{
+    display: inline-block;
 }
-.Box{
-    display: block;
-    text-align: center;
+.boxAbout{
+    display:block;
+    text-align: left;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+    width:500px;
+    margin: 20px;
 }
-.wordGroomsmen{
+.BoxName{
+    padding: 20px;
+}
+.nameGroomsmenAndBridemaids{
+    color: #555555;
+    font-size: 2.1em;
+    font-family: Timmana;
     text-transform: uppercase;
-    letter-spacing: -1px;
-    font-size: 3.3em;
-    color: #000000;
-    font-family: Oswald;
     line-height: 0.5;
-    margin: 0 10px;
+    letter-spacing: -1px;
 }
-
-.lineSmall hr {
-    width: 10%;
+.WhoisThisPersonForYou{
+    font-size:1.1em;
+    color:#999999;
 }
-
-.lineSmall img {
-    margin-left: -17.5px;
-    top: -4px;
-}
-.biograpfy{
-    width: 50%;
-    border: 12px solid #ffffff;
+.WhoisthisPerson{
+    text-align:justify; 
+    padding:20px;
+    font-size:0.9em;
+    color:#999999; 
     box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
 }
 
 
-
-
 /**************************bridesmaids*****************/
-.bridesmaids {
-    margin-top: 150px;
-    text-align: center;
-    width: 100%;
-}
 
-.wordBridesmaids{
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-size: 3.3em;
-    color: #000000;
-    font-family: Oswald;
-    line-height: 0.5;
-    margin: 0 10px;
-}
 
-.linesmaller hr {
-    width: 15%;
-}
 
-.linesmaller img {
-    margin-left: -17.5px;
-    top: -4px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**************************location********************/
-
-.location {
-    margin-top: 150px;
-    text-align: center;
-    width: 100%;
-}
-
 .locationDiv {
     display: flex;
     justify-content: center;
@@ -537,8 +617,7 @@ body {
     font-size: 3em;
     color: #000000;
     font-family: Oswald;
-    line-height: 0.5;
-    margin: 0 10px;
+    line-height: 0.7;
 }
 
 .slash {
@@ -581,6 +660,7 @@ body {
 
 .line hr {
     width: 25%;
+    margin: 0 auto;
 }
 
 .line img {
@@ -589,8 +669,8 @@ body {
 }
 
 @media (max-width: 814px) {
-    .location {
-        margin-top: 80px;
+    #location {
+        padding-top: 80px;
     }
     .styleBackground {
         line-height: 1.3em;
@@ -625,4 +705,27 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /****************************end********************/
+.ourPhotoEnd{
+    position: relative;
+}
+.ourPhotoEnd:after {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to bottom, white 30%, rgba(255,255,255,0) 50%);
+}
