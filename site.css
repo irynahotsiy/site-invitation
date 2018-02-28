@@ -91,15 +91,16 @@ body {
     background-size: cover;
     background-position: center;
     line-height: 0.9;
-    overflow: hidden; 
+    overflow: hidden;
     display: inline-block;
     width: 100%;
 }
-.boxforInvitation{
-   
+
+.boxforInvitation {
     width: 80%;
     margin: 0 auto;
 }
+
 .shadow {
     text-shadow: 3px 2px 1px #fdfdfd1f;
 }
@@ -110,18 +111,19 @@ body {
     text-align: center;
     font-family: "Oswald";
     letter-spacing: -1px;
-    font-size: 2.3em;
+    font-size: 3.5em;
     color: #0e0d0d;
 }
 
 .hrimg hr {
     width: 30%;
     height: 1px;
-    border-top:1px solid #dadada;
-    border-bottom:1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
     border-left: none;
-    border-right:none;
+    border-right: none;
 }
+
 .hrimg {
     position: relative;
     z-index: 0;
@@ -133,8 +135,8 @@ body {
     background: #e8e8e8;
     padding: 0 10px;
     position: absolute;
-    left: 50%; 
-    margin-left:-23.5px;
+    left: 50%;
+    margin-left: -23.5px;
     top: -6px;
 }
 
@@ -176,16 +178,16 @@ body {
     color: #ffffff;
     padding-bottom: 20px;
 }
+
 .date hr {
     margin: 20px auto;
     width: 30%;
     height: 1px;
-    border-top:1px solid #dadada;
-    border-bottom:1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
     border-left: none;
-    border-right:none;
+    border-right: none;
 }
-
 
 /********************Our story*************************/
 
@@ -223,20 +225,23 @@ body {
     letter-spacing: 1px;
     line-height: 0.9;
 }
-.oneline{
+
+.oneline {
     position: relative;
     z-index: 0;
     margin: 15px auto;
     text-align: center;
 }
+
 .oneline hr {
     width: 75%;
     height: 1px;
-    border-top:1px solid #b4c2c0;
-    border-bottom:none;
+    border-top: 1px solid #b4c2c0;
+    border-bottom: none;
     border-left: none;
-    border-right:none;
+    border-right: none;
 }
+
 .oneline img {
     background: #fffcfc;
     padding: 0 10px;
@@ -245,6 +250,7 @@ body {
     top: -6px;
     margin-left: -23.5px;
 }
+
 .name {
     text-align: center;
     text-transform: uppercase;
@@ -253,8 +259,6 @@ body {
     color: #0e0d0d;
     font-family: Oswald;
 }
-
-
 
 /* **************** Responsive main and Our story*********************/
 
@@ -308,6 +312,7 @@ body {
         font-size: 2.5em;
     }
 }
+
 @media (max-width: 814px) {
     #photo {
         margin-top: 35px;
@@ -321,13 +326,12 @@ body {
     .hrimg hr {
         width: 50%;
         height: 1px;
-        border-top:0.7px solid #67626230;
-        border-bottom:0.7px solid #67626230;
+        border-top: 0.7px solid #67626230;
+        border-bottom: 0.7px solid #67626230;
     }
     .hrimg {
         margin: 5px auto;
     }
-   
     .invitation {
         font-size: 3.1em;
     }
@@ -347,8 +351,8 @@ body {
         margin: 5px auto;
         width: 50%;
         height: 1px;
-        border-top:0.7px solid #67626230;
-        border-bottom:0.7px solid #67626230;
+        border-top: 0.7px solid #67626230;
+        border-bottom: 0.7px solid #67626230;
     }
     .blocks {
         width: calc(100% - 30px);
@@ -366,123 +370,200 @@ body {
     }
 }
 
-
-
 /**************************photos***********************/
-.photos{
+
+.photos {
     margin-top: 150px;
     text-align: center;
     width: 100%;
 }
-.wordPhotos{
+
+.wordPhotos {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 3.3em;
-    color:#000000;
+    color: #000000;
     font-family: Oswald;
     line-height: 0.5;
     margin: 0 10px;
 }
-.lineSmall hr{
-    width:10%;
+
+.lineSmall hr {
+    width: 10%;
 }
-.lineSmall img{
+
+.lineSmall img {
     margin-left: -17.5px;
     top: -4px;
 }
-.gallery{
+
+.gallery {
     margin: 20px 170px;
-    margin-bottom:0;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    border:12px solid #ffffff;
-    box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
+    border: 12px solid #ffffff;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
 }
-.gallery a{
-    display:inline-block; 
+
+.gallery a {
+    display: inline-block;
     box-sizing: border-box;
     padding: 3px;
 }
- .first{
+
+.first {
     width: 33.33333%;
 }
-.second{
+
+.second {
     width: 25%;
 }
+
 .gallery a img {
     width: 100%;
 }
 
 @media (max-width: 814px) {
-    .photos{
+    .photos {
         margin-top: 80px;
     }
-    .gallery{
-    margin: 20px 5px;
-    margin-bottom:0px;
-    border:5px solid #ffffff;
-    box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
+    .gallery {
+        margin: 20px 5px;
+        margin-bottom: 0px;
+        border: 5px solid #ffffff;
+        box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
     }
-   
-    .wordPhotos{
+    .wordPhotos {
         font-size: 2em;
         margin: 0 10px;
     }
-    .lineSmall hr{
-        width:25%;
+    .lineSmall hr {
+        width: 25%;
     }
-    .lineSmall img{
+    .lineSmall img {
         margin-left: -17.5px;
         top: -4px;
     }
-    .gallery a{
+    .gallery a {
         padding: 1px;
     }
 }
 
-/**************************location********************/
-.location{
+
+
+/**************************groomsmen*******************/
+.groomsmen {
     margin-top: 150px;
     text-align: center;
     width: 100%;
 }
-.locationDiv{
+.Box{
+    display: block;
+    text-align: center;
+}
+.wordGroomsmen{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 3.3em;
+    color: #000000;
+    font-family: Oswald;
+    line-height: 0.5;
+    margin: 0 10px;
+}
+
+.lineSmall hr {
+    width: 10%;
+}
+
+.lineSmall img {
+    margin-left: -17.5px;
+    top: -4px;
+}
+.biograpfy{
+    width: 50%;
+    border: 12px solid #ffffff;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+}
+
+
+
+
+/**************************bridesmaids*****************/
+.bridesmaids {
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+}
+
+.wordBridesmaids{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 3.3em;
+    color: #000000;
+    font-family: Oswald;
+    line-height: 0.5;
+    margin: 0 10px;
+}
+
+.linesmaller hr {
+    width: 15%;
+}
+
+.linesmaller img {
+    margin-left: -17.5px;
+    top: -4px;
+}
+
+/**************************location********************/
+
+.location {
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+}
+
+.locationDiv {
     display: flex;
     justify-content: center;
 }
-.locationblocks{
+
+.locationblocks {
     display: inline-block;
     align-items: center;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 3em;
-    color:#000000;
+    color: #000000;
     font-family: Oswald;
     line-height: 0.5;
     margin: 0 10px;
 }
-.slash{
+
+.slash {
     color: #d9e0df;
 }
+
 .positionImg img {
     padding: 0 4px;
     margin-left: -13px;
     top: -4px;
 }
-.details{
+
+.details {
     display: block;
     margin: 40px auto;
     width: 45%;
     padding: 20px 0;
-    box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
-
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
 }
-.styleBackground{
-    background:#ec4343;
+
+.styleBackground {
+    background: #ec4343;
     border-top: 7px solid #eeeeee;
     border-bottom: 7px solid #eeeeee;
-    text-transform:uppercase;
+    text-transform: uppercase;
     color: #8a0000;
     font-family: Oswald;
     line-height: 1.3em;
@@ -490,30 +571,32 @@ body {
     letter-spacing: -1px;
     font-weight: bold;
 }
-.styletext{
-    padding:40px;
-    color:#8F8F8F;
+
+.styletext {
+    padding: 40px;
+    color: #8F8F8F;
     line-height: 1.5em;
     font-family: Georgia;
 }
-.line hr{
+
+.line hr {
     width: 25%;
 }
-.line img{
+
+.line img {
     margin-left: -17.5px;
     top: -4px;
 }
 
-
 @media (max-width: 814px) {
-    .location{
+    .location {
         margin-top: 80px;
     }
-    .styleBackground{
+    .styleBackground {
         line-height: 1.3em;
         font-size: 1.5em;
     }
-    .locationblocks{
+    .locationblocks {
         font-size: 2em;
         margin: 0 2px;
     }
@@ -522,21 +605,20 @@ body {
         padding: 0 4px;
         margin-left: -11.5px;
         top: -4px;
-}
-    .details{
+    }
+    .details {
         width: 90%;
         padding: 10px 0;
-        box-shadow: 3px 2px 20px rgba(0,0,0,0.34);
-    
+        box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
     }
-    .styletext{
+    .styletext {
         padding: 20px;
         font-size: 0.8em;
     }
-    .line hr{
+    .line hr {
         width: 25%;
     }
-    .line img{
+    .line img {
         width: 12px;
         padding: 0 4px;
         margin-left: -10px;
