@@ -1,18 +1,8 @@
 body {
     background: #fffcfc;
     margin: 0;
+    cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /******************MENU*************************/
 
@@ -44,7 +34,7 @@ body {
     margin: 25px 30px;
 }
 
-.menu__category a {
+.menu__category div {
     text-decoration: none;
     text-transform: uppercase;
     color: #0e0d0d;
@@ -52,8 +42,8 @@ body {
     font-size: 1em;
 }
 
-.menu__category a:hover {
-    color: #8064644d;
+.menu__category div:hover {
+    color: #1413134d;
     transition: color 0.3s ease;
 }
 
@@ -61,7 +51,7 @@ body {
     .menu__category li {
         margin: 15px 25px;
     }
-    .menu__category a {
+    .menu__category div {
         font-size: 1em;
     }
 }
@@ -91,26 +81,15 @@ body {
     .open {
         display: block;
     }
-    .choose{
+    .choose {
         display: none;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************main*******************/
+#story {
+    text-align: center;
+}
 
 #photo {
     margin-top: 70px;
@@ -137,11 +116,12 @@ body {
     padding-top: 70px;
     text-transform: uppercase;
     text-align: center;
-    font-family: "Oswald";
+    font-family: "Francois One";
     letter-spacing: -1px;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: #0e0d0d;
 }
+
 
 .hrimg hr {
     width: 30%;
@@ -217,22 +197,9 @@ body {
     border-right: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********************Our story*************************/
 
-#ourStory {
+#our-story {
     padding-top: 100px;
     text-align: center;
 }
@@ -248,7 +215,7 @@ body {
 }
 
 .aboutus {
-    font-family: 'Homenaje';
+    font-family: "PT Sans Narrow";
     font-weight: 300;
     text-align: justify;
     line-height: 1.5;
@@ -298,27 +265,8 @@ body {
     letter-spacing: -1px;
     font-size: 2.3em;
     color: #0e0d0d;
-    font-family: Oswald;
+    font-family:  "Francois One";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* **************** Responsive main and Our story*********************/
 
@@ -414,7 +362,7 @@ body {
         border-top: 0.7px solid #67626230;
         border-bottom: 0.7px solid #67626230;
     }
-    #ourStory {
+    #our-story {
         padding-top: 70px;
     }
     .blocks {
@@ -433,34 +381,20 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************************photos***********************/
 
-.blocksAlign{
+.blocksAlign {
     padding-top: 150px;
     text-align: center;
     width: 100%;
 }
+
 .mainWords {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 3.3em;
     color: #000000;
-    font-family: Oswald;
+    font-family:  "Francois One";
     line-height: 0.5;
 }
 
@@ -489,11 +423,11 @@ body {
     padding: 3px;
 }
 
-.first {
+.one-third {
     width: 33.33333%;
 }
 
-.second {
+.one-forth {
     width: 25%;
 }
 
@@ -502,11 +436,12 @@ body {
 }
 
 @media (max-width: 814px) {
-    .blocksAlign{
+    .blocksAlign {
         padding-top: 80px;
     }
     .gallery {
-        width:100%;
+        width: calc(100% - 10px);
+        ;
         margin: 20px 5px;
         margin-bottom: 0px;
         border: 5px solid #ffffff;
@@ -518,10 +453,10 @@ body {
     .linesmaller hr {
         width: 25%;
     }
-    .first {
+    .one-third {
         width: 100%;
     }
-    .second {
+    .one-forth {
         width: 100%;
     }
     .gallery a {
@@ -529,81 +464,120 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************************groomsmen*******************/
 
-.biography{
-    display: inline-block;
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.boxAbout{
-    display:block;
+
+.positionPerson {
+    margin: 0 40px;
+}
+
+.boxAbout {
+    display: block;
     text-align: left;
     box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
-    width:500px;
-    margin: 20px;
+    width: 500px;
 }
-.BoxName{
+
+.BoxName {
     padding: 20px;
 }
-.nameGroomsmenAndBridemaids{
-    color: #555555;
+
+.nameGroomsmenAndBridemaids {
+    color:#2ab79e;
     font-size: 2.1em;
-    font-family: Timmana;
-    text-transform: uppercase;
+    font-family: "PT Sans Narrow";
+    font-weight: bold;
     line-height: 0.5;
     letter-spacing: -1px;
 }
-.WhoisThisPersonForYou{
-    font-size:1.1em;
-    color:#999999;
-}
-.WhoisthisPerson{
-    text-align:justify; 
-    padding:20px;
-    font-size:0.9em;
-    color:#999999; 
-    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+
+.WhoisThisPersonForYou {
+    font-size: 1.3em;
+    color: #999999;
+    font-family: "PT Sans Narrow";
 }
 
+.WhoisthisPerson {
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #999999;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+    font-family: "PT Sans Narrow";
+}
+.lines hr {
+    width: 25%;
+}
+.lines img {
+    width: 15px;
+    margin-left: -17.5px;
+    top: -4px;
+    padding: 0 10px;
+}
 
 /**************************bridesmaids*****************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 814px) {
+    .person {
+        display: flex;
+    }
+    .theSame{
+        flex-direction: column;
+    }
+    .reverse{
+         flex-direction: column-reverse;
+    }
+    .positionPerson {
+        margin: 0px 5px;
+    }
+    .positionPerson img {
+        width: 85;
+        margin: 20px 5px;
+    }
+    .boxAbout {
+        display: block;
+        text-align: left;
+        box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+        width:100%;
+        margin-top: 10px;
+    }
+    .BoxName {
+        padding: 10px;
+    }
+    .nameGroomsmenAndBridemaids {
+        color: #555555;
+        font-size: 1.8em;
+        font-family: Timmana;
+        text-transform: uppercase;
+        line-height: 0.5;
+        letter-spacing: -1px;
+    }
+    .WhoisThisPersonForYou {
+        font-size: 1em;
+        color: #999999;
+    }
+    .WhoisthisPerson {
+        text-align: justify;
+        padding: 10px;
+        font-size: 0.9em;
+        color: #999999;
+        box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.34);
+    }
+    .lines img {
+        width: 12px;
+        margin-left: -10px;
+        top: -23px;
+        padding: 0 4px;
+    }
+}
 
 /**************************location********************/
+
 .locationDiv {
     display: flex;
     justify-content: center;
@@ -614,16 +588,20 @@ body {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: -1px;
-    font-size: 3em;
+    font-size: 3.3em;
     color: #000000;
-    font-family: Oswald;
+    font-family:  "Francois One";
     line-height: 0.7;
 }
 
 .slash {
     color: #d9e0df;
+    padding: 0 10px;
+    font-family: Georgia;
 }
-
+.positionImg hr {
+    width:75%;
+}
 .positionImg img {
     padding: 0 4px;
     margin-left: -13px;
@@ -644,18 +622,48 @@ body {
     border-bottom: 7px solid #eeeeee;
     text-transform: uppercase;
     color: #8a0000;
-    font-family: Oswald;
-    line-height: 1.3em;
+    font-family: "Fjalla One";
+    line-height: 1.5em;
     font-size: 2em;
     letter-spacing: -1px;
-    font-weight: bold;
+    font-weight: bold; 
+    position: relative;
+}
+
+.border{
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+}
+.left{
+    left: -30px;
+}
+.colorsFirst{
+    background: #ec4343;
+    height: 48px;
+    display: inline-block;
+    width:100%;
+}
+.right {  
+    right: -30px; 
+}
+.colorsSecond{
+    background: #b32222;
+    height: 48px;
+    display: inline-block;
+    width:100%;
 }
 
 .styletext {
     padding: 40px;
     color: #8F8F8F;
+    font-size: 1.2em;;
     line-height: 1.5em;
-    font-family: Georgia;
+    font-family: "PT Sans Narrow";
+}
+.mainWhere{
+    text-transform: uppercase;
+    font-size: 1.3em;
 }
 
 .line hr {
@@ -705,21 +713,12 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /****************************end********************/
-.ourPhotoEnd{
+
+.ourPhotoEnd {
     position: relative;
 }
+
 .ourPhotoEnd:after {
     content: "";
     left: 0;
@@ -727,5 +726,5 @@ body {
     top: 0;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to bottom, white 30%, rgba(255,255,255,0) 50%);
+    background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0) 50%);
 }

@@ -3,7 +3,7 @@
 
 <head>
     <title>Wedding invitation</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Amaranth|Maiden+Orange|Timmana|Homenaje:300,400|Oswald:400,500,600|Fugaz+One"
+    <link href="https://fonts.googleapis.com/css?family=Acme|Amaranth|Maiden+Orange|Timmana|Homenaje:300,400|Oswald:400,500,600|PT+Sans+Narrow|Roboto+Condensed|Fjalla+One|Contrail+One|PT+Sans+Narr|Acme|Francois+One"
         rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="site.css">
@@ -16,55 +16,56 @@
 <body>
     <div class="menu">
         <div class="menu__logo">
-            <a href="#">
+            <a href="#" class="iconHeart">
                 <img src="images/hearts.png" width="30">
             </a>
-            <span class="mobile_menu_click right">
+            <span class="mobile_menu_click">
                 <img src="http://downloadicons.net/sites/default/files/list-icon-64429.png" width="30" alt="logo">
             </span>
         </div>
         <div class="menu__category">
             <ul>
                 <li>
-                    <a href="#" class="noneImg">
+                    <div class="noneImg btn js-btn" data-id="photo">
                         <img src="images/hearts.png" width="30">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#ourStory">Our story</a>
+                    <div class="btn menu-item" data-id="our-story">Our story</div>
                 </li>
                 <li>
-                    <a href="#photos">Photos</a>
+                    <div class="btn menu-item" data-id="photos">Photos</div>
                 </li>
                 <li>
-                    <a href="#groomsmen">Groomsman</a>
+                    <div class="btn menu-item" data-id="groomsmen">Groomsman</div>
                 </li>
                 <li>
-                    <a href="#bridesmaids">Bridesmaids</a>
+                    <div class="btn menu-item" data-id="bridesmaids">Bridesmaids</div>
                 </li>
                 <li>
-                    <a href="#location">When/Where/How</a>
+                    <div class="btn menu-item" data-id="location">When/Where/How</div>
                 </li>
             </ul>
         </div>
     </div>
-
-    <div id="photo">
-        <div class="boxforInvitation">
-            <div class="we shadow">Roman & Iryna</div>
-            <div class="hrimg">
-                <hr>
-                <img src="images/hearts.png" width="25">
-            </div>
-            <div class="invitation shadow">Invite you</div>
-            <div class="wedding shadow">to their wedding</div>
-            <div class="celebration shadow">Celebration</div>
-            <div class="date shadow">21.04.2018
-                <hr>
+    <div class="menu-section">
+        <div id="photo">
+            <div class="boxforInvitation">
+                <div class="we shadow">Roman & Iryna</div>
+                <div class="hrimg">
+                    <hr>
+                    <img src="images/hearts.png" width="25">
+                </div>
+                <div class="invitation shadow">Invite you</div>
+                <div class="wedding shadow">to their wedding</div>
+                <div class="celebration shadow">Celebration</div>
+                <div class="date shadow">21.04.2018
+                    <hr>
+                </div>
             </div>
         </div>
     </div>
-    <div id="ourStory">
+    <div id="our-story" class="menu-section">
         <div class="blocks">
             <div class="groomeAndBride">Groome
                 <div class="name shadow">Roman Hotsiy</div>
@@ -93,7 +94,7 @@
                 celibacy, lack of consent, or the couple's being related within the prohibited degrees of kinship.</div>
         </div>
     </div>
-    <div id="photos" class="blocksAlign">
+    <div id="photos" class="blocksAlign menu-section">
         <div class="mainWords">Photos
             <div class="oneline linesmaller">
                 <hr>
@@ -101,191 +102,236 @@
             </div>
         </div>
         <div class="gallery">
-            <a href="photos/photo1.jpg" class="second" data-caption="Egypt (Hyrghada - 2015)">
-                <img src="photos/photo1-thumb.jpg" alt="First image">
+            <a href="photos/photo1.jpg" class="one-forth" data-caption="Egypt (Hyrghada - 2015)">
+                <img src="photos/photo1-thumb.jpg">
             </a>
-            <a href="photos/photo4.jpg" class="second" data-caption="Poland (Gdansk - 2016)">
-                <img src="photos/photo4-thumb.jpg" alt="Forth image">
+            <a href="photos/photo4.jpg" class="one-forth" data-caption="Poland (Gdansk - 2016)">
+                <img src="photos/photo4-thumb.jpg">
             </a>
-            <a href="photos/photo5.jpg" class="second" data-caption="Island (2016)">
-                <img src="photos/photo5-thumb.jpg" alt="Fifth image">
+            <a href="photos/photo5.jpg" class="one-forth" data-caption="Island (2016)">
+                <img src="photos/photo5-thumb.jpg">
             </a>
-            <a href="photos/photo6.jpg" class="second" data-caption="Island (2016)">
-                <img src="photos/photo6-thumb.jpg" alt="Eighth image">
+            <a href="photos/photo6.jpg" class="one-forth" data-caption="Island (2016)">
+                <img src="photos/photo6-thumb.jpg">
             </a>
-            <a href="photos/photo7.jpg" class="first" data-caption="Island (2016)">
-                <img src="photos/photo7-thumb.jpg" alt="Seventh image">
+            <a href="photos/photo7.jpg" class="one-third" data-caption="Island (2016)">
+                <img src="photos/photo7-thumb.jpg">
             </a>
-            <a href="photos/photo12.jpg" class="first" data-caption="Island (2016)">
-                <img src="photos/photo12-thumb.jpg" alt="Third image">
+            <a href="photos/photo12.jpg" class="one-third" data-caption="Island (2016)">
+                <img src="photos/photo12-thumb.jpg">
             </a>
-            <a href="photos/photo17.jpg" class="first" data-caption="Ukraine (Gorgany Mountains - 2017)">
-                <img src="photos/photo17-thumb.jpg" alt="Sixth image">
+            <a href="photos/photo17.jpg" class="one-third" data-caption="Ukraine (Gorgany Mountains - 2017)">
+                <img src="photos/photo17-thumb.jpg">
             </a>
-            <a href="photos/photo18.jpg" class="second" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
-                <img src="photos/photo18-thumb.jpg" alt="Nineth image">
+            <a href="photos/photo18.jpg" class="one-forth" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
+                <img src="photos/photo18-thumb.jpg">
             </a>
-            <a href="photos/photo21.jpg" class="second" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
-                <img src="photos/photo21-thumb.jpg" alt="Seventh image">
+            <a href="photos/photo21.jpg" class="one-forth" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
+                <img src="photos/photo21-thumb.jpg">
             </a>
-            <a href="photos/photo22.jpg" class="second" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
-                <img src="photos/photo22-thumb.jpg" alt="Sixth image">
+            <a href="photos/photo22.jpg" class="one-forth" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
+                <img src="photos/photo22-thumb.jpg">
             </a>
-            <a href="photos/photo23.jpg" class="second" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
-                <img src="photos/photo23-thumb.jpg" alt="Nineth image">
+            <a href="photos/photo23.jpg" class="one-forth" data-caption="Ukraine (Lviv - Stryiskyi Park - 2018)">
+                <img src="photos/photo23-thumb.jpg">
             </a>
         </div>
     </div>
     </div>
-    <div id="groomsmen" class="blocksAlign">
+    <div id="groomsmen" class="blocksAlign menu-section">
         <div class="mainWords">Groomsmen
             <div class="oneline linesmaller">
                 <hr>
                 <img src="images/hearts.png" width="18">
             </div>
         </div>
-        <div class="biography"></div>
-        <div class="biography">
-            <div class="boxAbout">
-                <div class="BoxName"> 
-                    <span class="nameGroomsmenAndBridemaids">Taras Govda</span>
-                    <br>
-                    <span class="WhoisThisPersonForYou">High School & Best Friend</span>
-                </div>
-                <div class="WhoisthisPerson">I have known Pepper my whole life and he is my best friend in the world. We grew up in New Mexico playing guns, dressing up like girls (his idea), and just making the most of the time we had together. I lived with Pepper after college for 2 years and it was such an amazing experience having my childhood friend as a roommate when I was an adult. If you see him at the wedding make sure to ask him why he is my best man.
-                    <div class="oneline line">
-                        <hr>
-                        <img src="images/hearts.png" width="15">
+        <div class="person theSame">
+            <div class="positionPerson">
+                <img src="http://www.jennyandgrayden.com/img/groomsmen/06-garrett-poper.png">
+            </div>
+            <div class="positionPerson">
+                <div class="boxAbout">
+                    <div class="BoxName">
+                        <span class="nameGroomsmenAndBridemaids">Taras Govda</span>
+                        <br>
+                        <span class="WhoisThisPersonForYou">High School & Best Friend</span>
+                    </div>
+                    <div class="WhoisthisPerson">
+                        <div class="oneline lines">
+                            <hr>
+                            <img src="images/hearts.png" width="15">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="boxAbout">
-                <div class="BoxName">
-                    <span class="nameGroomsmenAndBridemaids">Oleg Kuts</span>
-                    <br>
-                    <span class="WhoisThisPersonForYou">Best Man & Best Friend</span>
-                </div>
-                <div class="WhoisthisPerson">I have never in my life met someone that can make me laugh like Warren and at the same time want to kill him a minute later. His humor is unmatched and very unusual. Warren and I shared a room for 2 years. We even had a bathroom with his and her sinks. I have not known Warren very long but I know he will be a life long friend. Ask Warren about his financial planning robot. It is sick!
-                    <div class="oneline line">
-                        <hr>
-                        <img src="images/hearts.png" width="15">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="biography"></div>
         </div>
-        <div id="bridesmaids" class="blocksAlign">
-            <div class="mainWords">Bridesmaids
-                <div class="oneline linesmaller">
+        <div class="person reverse">
+            <div class="positionPerson ">
+                <div class="boxAbout">
+                    <div class="BoxName">
+                        <span class="nameGroomsmenAndBridemaids">Oleg Kuts</span>
+                        <br>
+                        <span class="WhoisThisPersonForYou">Best Man & Best Friend</span>
+                    </div>
+                    <div class="WhoisthisPerson">
+                        <div class="oneline lines">
+                            <hr>
+                            <img src="images/hearts.png" width="15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="positionPerson">
+                <img src="http://www.jennyandgrayden.com/img/groomsmen/04-jeremy-poper.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="bridesmaids" class="blocksAlign menu-section">
+        <div class="mainWords">Bridesmaids
+            <div class="oneline linesmaller">
+                <hr>
+                <img src="images/hearts.png" width="18">
+            </div>
+        </div>
+        <div class="person theSame">
+            <div class="positionPerson">
+                <img src="http://www.jennyandgrayden.com/img/bridesmaids/01-melissa-root.png">
+            </div>
+            <div class="positionPerson">
+                <div class="boxAbout">
+                    <div class="BoxName">
+                        <span class="nameGroomsmenAndBridemaids">Natalia Vovk</span>
+                        <br>
+                        <span class="WhoisThisPersonForYou">Cousine & Best Friend & Classmate</span>
+                    </div>
+                    <div class="WhoisthisPerson">
+                        <div class="oneline lines">
+                            <hr>
+                            <img src="images/hearts.png" width="15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="person reverse">
+            <div class="positionPerson">
+                <div class="boxAbout">
+                    <div class="BoxName">
+                        <span class="nameGroomsmenAndBridemaids">Iryna Dorosh</span>
+                        <br>
+                        <span class="WhoisThisPersonForYou">Best Friend from childhood</span>
+                    </div>
+                    <div class="WhoisthisPerson">
+                        <div class="oneline lines">
+                            <hr>
+                            <img src="images/hearts.png" width="15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="positionPerson">
+                <img src="http://www.jennyandgrayden.com/img/bridesmaids/02-stephanie-weber.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="location" class="blocksAlign menu-section">
+        <div class="locationDiv">
+            <div class="locationblocks">When
+                <div class="oneline positionImg">
                     <hr>
                     <img src="images/hearts.png" width="18">
                 </div>
             </div>
-            <div class="biography"></div>
-        <div class="biography">
-            <div class="boxAbout">
-                <div class="BoxName"> 
-                    <span class="nameGroomsmenAndBridemaids">Natalia Vovk</span>
-                    <br>
-                    <span class="WhoisThisPersonForYou">Cousine & Best Friend & Classmate</span>
-                </div>
-                <div class="WhoisthisPerson">Stephanie is the girliest girly girl I have ever met! She is Barbie in the flesh and I enjoy being around this woman so much! I especially enjoyed living with her and transforming to her "girl" like ways. I will always remember one night accidentally dying her hair pink! She was so nice and did not mind at all, her favorite color is pink and she wore it proudly. Stephanie has killer looks and also has a loving, sensitive, warm heart to match. She's amazing inside and out and I am lucky to have her.
-                    <div class="oneline line">
-                        <hr>
-                        <img src="images/hearts.png" width="15">
-                    </div>
+            <div class="locationblocks slash">/</div>
+            <div class="locationblocks">Where
+                <div class="oneline positionImg">
+                    <hr>
+                    <img src="images/hearts.png" width="18">
                 </div>
             </div>
-            <div class="boxAbout">
-                <div class="BoxName">
-                    <span class="nameGroomsmenAndBridemaids">Iryna Dorosh</span>
-                    <br>
-                    <span class="WhoisThisPersonForYou">Best Friend</span>
-                </div>
-                <div class="WhoisthisPerson">Stephanie is the girliest girly girl I have ever met! She is Barbie in the flesh and I enjoy being around this woman so much! I especially enjoyed living with her and transforming to her "girl" like ways. I will always remember one night accidentally dying her hair pink! She was so nice and did not mind at all, her favorite color is pink and she wore it proudly. Stephanie has killer looks and also has a loving, sensitive, warm heart to match. She's amazing inside and out and I am lucky to have her.
-                    <div class="oneline line">
-                        <hr>
-                        <img src="images/hearts.png" width="15">
-                    </div>
+            <div class="locationblocks slash">/</div>
+            <div class="locationblocks">How
+                <div class="oneline positionImg">
+                    <hr>
+                    <img src="images/hearts.png" width="18">
                 </div>
             </div>
-            </div>
-            <div class="biography"></div>
         </div>
-        <div id="location" class="blocksAlign">
-            <div class="locationDiv">
-                <div class="locationblocks">When
-                    <div class="oneline positionImg">
-                        <hr>
-                        <img src="images/hearts.png" width="18">
-                    </div>
+        <div class="details">
+            <div class="styleBackground">
+                <div class="border left">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
-                <div class="locationblocks slash">/</div>
-                <div class="locationblocks">Where
-                    <div class="oneline positionImg">
-                        <hr>
-                        <img src="images/hearts.png" width="18">
-                    </div>
-                </div>
-                <div class="locationblocks slash">/</div>
-                <div class="locationblocks">How
-                    <div class="oneline positionImg">
-                        <hr>
-                        <img src="images/hearts.png" width="18">
-                    </div>
+                <span>When</span>
+                <div class="border right">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
             </div>
-            <div class="details">
-                <div class="styleBackground">When</div>
-                <div class="styletext">
-                    <span>Saturday, April 21, 2018</span>
-                    <br>
-                    <span>12:30 pm</span>
+            <div class="styletext">
+                <span class="mainWhere">Субота | 21 | Квітень</span>
+                <br>
+                <span>12:30</span>
+            </div>
+            <div class="oneline line">
+                <hr>
+                <img src="images/hearts.png" width="15">
+            </div>
+        </div>
+        <div class="details">
+            <div class="styleBackground">
+                <div class="border left">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
-                <div class="oneline line">
-                    <hr>
-                    <img src="images/hearts.png" width="15">
+                <span>Where</span>
+                <div class="border right">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
             </div>
-            <div class="details">
-                <div class="styleBackground">Where</div>
-                <div class="styletext">
-                    <span>Our celebration will take place at the beautifulMarina Village Baja Room in San Diego . The address is
-                        1936 Quivira Way | San Diego, California 92109. There is plenty of parking and it is free.</span>
-                    <br>
-                    <br>
-                    <span>The ceremony will be at the South lawn, followed by a reception dinner and kickin' dance party at the
-                        Baja Room location right next to the ceremony site, just a short walk away.</span>
+            <div class="styletext">
+                <span class="mainWhere">Викуп нареченої</span>
+                <br>
+                <span>с. Помлинів 1, 22</span>
+                <br>
+                <br>
+                <span class="mainWhere">Церемонія вінчання</span>
+                <br>
+                <span>Xрам Воскресіння Господнього, с. Липник, вул. Гайові</span>
+                <br>
+                <br>
+                <span class="mainWhere">Бенкет</span>
+                <br>
+                <span>Ресторан "Рата", м. Рава-Руська, вул. Коновальця, 25</span>
+
+            </div>
+            <div class="oneline line">
+                <hr>
+                <img src="images/hearts.png" width="15">
+            </div>
+        </div>
+        <div class="details">
+            <div class="styleBackground">
+                <div class="border left">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
-                <div class="oneline line">
-                    <hr>
-                    <img src="images/hearts.png" width="15">
+                <span>How</span>
+                <div class="border right">
+                    <span class="colorsFirst"></span>
+                    <span class="colorsSecond"></span>
                 </div>
             </div>
-            <div class="details">
-                <div class="styleBackground">How</div>
-                <div class="styletext">
-                    <span>For our out of town guests, fly into the San Diego International Airport (airport code SAN).</span>
-                    <br>
-                    <br>
-                    <span>Hyatt Regency Mission Bay is offering us special rates for our wedding weekend. It's a beautiful place
-                        and a great locale. The hotel is within walking distance to Marina Village or a quick 2 minute drive.</span>
-                    <br>
-                    <br>
-                    <span>San Diego spring weather is typically mild (60s - 70s), but could get chilly once the sun goes down.
-                        The ceremony will be outside and the reception will be inside, but be sure to bring a sweater or
-                        light jacket just in case.</span>
-                    <br>
-                    <br>
-                    <span>If you have any questions about any of the above, feel free to email us at jennyandgrayden@gmail.com.</span>
-                    <br>
-                    <br>
-                </div>
-                <div class="oneline line">
-                    <hr>
-                    <img src="images/hearts.png" width="15">
-                </div>
+            <div class="styletext">
+                <span class="mainWhere">12:30</span>
+                <br>
+                <span>із вул. Сулими буде відправлятись автобус</span>
+                <br>
+                <br>
             </div>
         </div>
         <div class="ourPhotoEnd">
