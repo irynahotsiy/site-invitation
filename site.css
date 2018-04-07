@@ -464,7 +464,7 @@ body {
     }
 }
 
-/**************************groomsmen*******************/
+/**************************groomsmen/bridesman*******************/
 
 .person {
     display: flex;
@@ -520,8 +520,6 @@ body {
     padding: 0 10px;
 }
 
-/**************************bridesmaids*****************/
-
 @media (max-width: 814px) {
     .person {
         display: flex;
@@ -534,6 +532,9 @@ body {
     }
     .positionPerson {
         margin: 0px 5px;
+    }
+    .positionPerson.about {
+        width: 75%;
     }
     .positionPerson img {
         width: 85;
