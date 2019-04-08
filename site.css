@@ -189,8 +189,8 @@ body {
     font-size: 7em;
 }
 .selible-first{
-    position: ablsolute;
-    margin-top: -8%;
+    position: absolute;
+    margin-top: -5%;
     margin-left: 20%;
 }
 .selible-second{
