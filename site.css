@@ -191,12 +191,12 @@ body {
 .sing-first{
     position: absolute;
     margin-top: -5%;
-    margin-left: 20%;
+    margin-left: -25%;
 }
 .sing-second{
-    position: relative;
+    position: absolute;
     margin-top: 2%;
-    margin-left: 75%;
+    margin-left: 20%;
 }
 .circle {
     position: absolute;
@@ -316,7 +316,7 @@ body {
 
 .one-line img {
     background: #fffcfc;
-    padding: 0 5px;
+    padding: 0 3px;
     position: absolute;
     left: 50%;
     top: -4px;
@@ -339,6 +339,9 @@ body {
         padding: 15px;
         margin-top: 40px;
         width: calc(40% - 30px);
+    }
+    .sing-first, .sing-second{
+        display: none;
     }
 }
 
@@ -491,7 +494,6 @@ body {
 }
 
 .smaller-line img {
-    margin-left: -17.5px;
     top: -4px;
 }
 
